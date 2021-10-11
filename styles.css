@@ -228,7 +228,8 @@
 
  /* LOADER */
 
-  .loader {
+  .loader,
+  .loader1 {
     border: 10px solid #f3f3f3;
     border-top: 10px solid #C271FF;
     border-radius: 50%;
