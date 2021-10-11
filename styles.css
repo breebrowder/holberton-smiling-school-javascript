@@ -242,3 +242,69 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+/* CSS ADDITIONS FOR JAVASCRIPT PROJECT: COURSES PAGE */
+
+  .text-muted {
+    opacity: 0.4;
+}
+
+.form-control, .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: var(--color-lighter);
+  font-size: 23px;
+  border-bottom: var(--color-lighter) 1px solid;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  padding-left: 2em;
+  height: 51px;
+}
+
+#select-topic {
+    color: var(--color-lighter);
+    font-weight: 300;
+    font-size: 23px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: .25rem;
+    border-bottom: var(--color-lighter) 1px solid;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+#select-sort {
+    color: var(--color-lighter);
+    font-weight: 300;
+    font-size: 23px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: .25rem;
+    border-bottom: var(--color-lighter) 1px solid;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+dropdown-toggle::after {
+    position: absolute;
+    top: 2.25em;
+    right: 1.75em;
+}
+
+.keyword-search {
+    position: relative;
+}
+
+.keyword-search > span {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 43px;
+    left: 25px;
+}
+
+
+.label-text {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+#keyword-box {
+    font-weight: 300;
+}
