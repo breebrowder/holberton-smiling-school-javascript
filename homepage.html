@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <script src="1-scripts.js"></script>
+    <script src="2-scripts.js"></script>
+    <script src="3-scripts.js"></script>
     <title>SmileSchool</title>
     <link rel="icon" type="image/png" href="./image_assets/favicon.ico">
     <link rel="stylesheet" href="./styles.css">
@@ -87,34 +89,43 @@
             <section class="p-bg font-size pt-5 pb-5">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="loader"></div>
                         <div class="carousel-item active">
-                            <div class="row justify-content-around">
-                                <div class="col-sm-2">
-                                    <img class="rounded-circle mx-auto mt-3 mb-3 d-block"
-                                        src="image_assets/profile_5.jpg" width="150" height="150" alt="slide">
-                                </div>
-                                <div class="col-sm-6 ml-3 mr-3 float-left">
-                                    <p>« Those tutorials are concise and go straight to the point. I can’t think of a
-                                        better place to learn smiling. And it’s so fun!</p>
-                                    <p><span class="text-white font-weight-bold">Person Name</span><br>
-                                        <span class="text-white font-italic">weather presenter</span>
-                                    </p>
+                            <div class="loader"></div>
+                            <div class="row align-items-center justify-content-center" id="quote1">
+                                <div class="row justify-content-around">
+                                    <div class="col-sm-2">
+                                        <img class="rounded-circle mx-auto mt-3 mb-3 d-block" id="profile"
+                                            src="image_assets/profile_5.jpg" width="150" height="150" alt="slide">
+                                    </div>
+                                    <div class="col-sm-6 ml-3 mr-3 float-left" id="testimonial1">
+                                        <p>« Those tutorials are concise and go straight to the point. I can’t think of
+                                            a
+                                            better place to learn smiling. And it’s so fun!</p>
+                                        <p><span class="text-white font-weight-bold" id="name">Person Name</span><br>
+                                            <span class="text-white font-italic" id="weatherman">weather
+                                                presenter</span>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="row justify-content-around">
-                                <div class="col-sm-2">
-                                    <img class="rounded-circle mx-auto mt-3 mb-3 d-block"
-                                        src="image_assets/profile_5.jpg" width="150" height="150" alt="slide">
-                                </div>
-                                <div class="col-sm-6 ml-3 mr-3 float-left">
-                                    <p>« Those tutorials are concise and go straight to the point. I can’t think of a
-                                        better place to learn smiling. And it’s so fun!</p>
-                                    <p><span class="text-white font-weight-bold">Person Name</span><br>
-                                        <span class="text-white font-italic">weather presenter</span>
-                                    </p>
+                            <div class="loader"></div>
+                            <div class="row align-items-center justify-content-center" id="quote2">
+                                <div class="row justify-content-around">
+                                    <div class="col-sm-2">
+                                        <img class="rounded-circle mx-auto mt-3 mb-3 d-block" id="profile1"
+                                            src="image_assets/profile_5.jpg" width="150" height="150" alt="slide">
+                                    </div>
+                                    <div class="col-sm-6 ml-3 mr-3 float-left" id="testimonial2">
+                                        <p>« Those tutorials are concise and go straight to the point. I can’t think of
+                                            a
+                                            better place to learn smiling. And it’s so fun!</p>
+                                        <p><span class="text-white font-weight-bold" id="name1">Person Name</span><br>
+                                            <span class="text-white font-italic" id="weatherman1">weather
+                                                presenter</span>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -138,90 +149,100 @@
                         <h3 class="text-center text-dark font-weight-normal py-5">Most <span
                                 class="highlightpurple font-weight-bold">Popular</span>
                             Tutorials</h3>
-			<div class="loader"></div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="card mb-5">
+                                <div class="loader1"></div>
+                                <div class="card mb-5" id="tutorials1">
                                     <div id="img-1" class="d-flex justify-content-center align-item-center">
                                         <img id="play" class="align-self-center" src="image_assets/play.png"
-                                            alt="play-btn">
+                                            id="firstPic" alt="play-btn">
                                     </div>
                                     <div class="card-body">
-                                        <h6 class="card-title text-dark d-flex justify-content-between">Diagonal Smile
+                                        <h6 class="card-title text-dark d-flex justify-content-between" id="title1">
+                                            Diagonal Smile
                                         </h6>
-                                        <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect
+                                        <p class="card-text text-muted" id="text1">Lorem ipsum dolor sit amet, consect
                                             adipiscing elit, sed do eiusmod.</p>
                                         <div class="row">
-                                            <img src="image_assets/profile_1.jpg" class="rounded-circle"
+                                            <img src="image_assets/profile_1.jpg" class="rounded-circle" id="pro1"
                                                 alt="profile-pic">
-                                            <p class="highlightpurple ml-3">Phillip Massey</p>
+                                            <p class="highlightpurple ml-3" id="proname">Phillip Massey</p>
                                         </div>
                                         <div class="row">
-                                            <p class="highlightpurple ml-auto">8 min</p>
+                                            <p class="highlightpurple ml-auto" id="time">8 min</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item pb-5">
-                                <div class="card mb-2">
+                                <div class="loader1"></div>
+                                <div class="card mb-2" id="tutorials2">
                                     <div id="img-2" class="d-flex justify-content-center align-item-center">
                                         <img id="play" class="align-self-center" src="image_assets/play.png"
-                                            alt="play-btn">
+                                            id="firstPic" alt="play-btn">
                                     </div>
                                     <div class="card-body">
-                                        <h6 class="card-title text-dark d-flex justify-content-between">Sad Smile</h6>
-                                        <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect
+                                        <h6 class="card-title text-dark d-flex justify-content-between" id="title1">Sad
+                                            Smile
+                                        </h6>
+                                        <p class="card-text text-muted" id="text1">Lorem ipsum dolor sit amet, consect
                                             adipiscing elit, sed do eiusmod.</p>
                                         <div class="row">
-                                            <img src="image_assets/profile_1.jpg" class="rounded-circle"
+                                            <img src="image_assets/profile_1.jpg" class="rounded-circle" id="pro1"
                                                 alt="profile-pic">
-                                            <p class="highlightpurple ml-3">Phillip Massey</p>
+                                            <p class="highlightpurple ml-3" id="proname">Phillip Massey</p>
                                         </div>
                                         <div class="row">
-                                            <p class="highlightpurple ml-auto">8 min</p>
+                                            <p class="highlightpurple ml-auto" id="time">8 min</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item pb-5">
-                                <div class="card mb-2">
+                                <div class="loader1"></div>
+                                <div class="card mb-2" id="tutorials3">
                                     <div id="img-3" class="d-flex justify-content-center align-item-center">
                                         <img id="play" class="align-self-center" src="image_assets/play.png"
-                                            alt="play-btn">
+                                            id="firstPic" alt="play-btn">
                                     </div>
                                     <div class="card-body">
-                                        <h6 class="card-title text-dark d-flex justify-content-between">Natural Smile
+                                        <h6 class="card-title text-dark d-flex justify-content-between" id="title1">
+                                            Natural
+                                            Smile
                                         </h6>
-                                        <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect
+                                        <p class="card-text text-muted" id="text1">Lorem ipsum dolor sit amet, consect
                                             adipiscing elit, sed do eiusmod.</p>
                                         <div class="row">
-                                            <img src="image_assets/profile_1.jpg" class="rounded-circle"
+                                            <img src="image_assets/profile_1.jpg" class="rounded-circle" id="pro1"
                                                 alt="profile-pic">
-                                            <p class="highlightpurple ml-3">Phillip Massey</p>
+                                            <p class="highlightpurple ml-3" id="proname">Phillip Massey</p>
                                         </div>
                                         <div class="row">
-                                            <p class="highlightpurple ml-auto">8 min</p>
+                                            <p class="highlightpurple ml-auto" id="time">8 min</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item pb-5">
-                                <div class="row card mb-2 ml-3 mr-3 justify-content-center">
+                                <div class="loader1"></div>
+                                <div class="row card mb-2 ml-3 mr-3 justify-content-center" id="tutorials4">
                                     <div id="img-4" class="d-flex justify-content-center align-item-center">
                                         <img id="play" class="align-self-center" src="image_assets/play.png"
-                                            alt="play-btn">
+                                            id="firstPic" alt="play-btn">
                                     </div>
                                     <div class="card-body">
-                                        <h6 class="card-title text-dark d-flex justify-content-between">Happy Smile</h6>
-                                        <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect
+                                        <h6 class="card-title text-dark d-flex justify-content-between" id="title1">
+                                            Happy Smile
+                                        </h6>
+                                        <p class="card-text text-muted" id="text1">Lorem ipsum dolor sit amet, consect
                                             adipiscing elit, sed do eiusmod.</p>
                                         <div class="row">
-                                            <img src="image_assets/profile_1.jpg" class="rounded-circle"
+                                            <img src="image_assets/profile_1.jpg" class="rounded-circle" id="pro1"
                                                 alt="profile-pic">
-                                            <p class="highlightpurple ml-3">Phillip Massey</p>
+                                            <p class="highlightpurple ml-3" id="proname">Phillip Massey</p>
                                         </div>
                                         <div class="row">
-                                            <p class="highlightpurple ml-auto">8 min</p>
+                                            <p class="highlightpurple ml-auto" id="time">8 min</p>
                                         </div>
                                     </div>
                                 </div>
@@ -298,92 +319,106 @@
                                 <h3 class="text-center text-dark font-weight-normal py-5"><span
                                         class="highlightpurple font-weight-bold">Latest</span>
                                     Videos</h3>
-				<div class="loader"></div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <div class="card mb-5">
+                                        <div class="loader2"></div>
+                                        <div class="card mb-5" id="tutorials1">
                                             <div id="img-1" class="d-flex justify-content-center align-item-center">
                                                 <img id="play" class="align-self-center" src="image_assets/play.png"
-                                                    alt="play-btn">
+                                                    id="firstPic" alt="play-btn">
                                             </div>
                                             <div class="card-body">
-                                                <h6 class="card-title text-dark d-flex justify-content-between">Diagonal
+                                                <h6 class="card-title text-dark d-flex justify-content-between"
+                                                    id="title1">
+                                                    Diagonal
                                                     Smile</h6>
-                                                <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect
+                                                <p class="card-text text-muted" id="text1">Lorem ipsum dolor sit amet,
+                                                    consect
                                                     adipiscing elit, sed do eiusmod.</p>
                                                 <div class="row">
                                                     <img src="image_assets/profile_1.jpg" class="rounded-circle"
-                                                        alt="profile-pic">
-                                                    <p class="highlightpurple ml-3">Phillip Massey</p>
+                                                        id="pro1" alt="profile-pic">
+                                                    <p class="highlightpurple ml-3" id="proname">Phillip Massey</p>
                                                 </div>
                                                 <div class="row">
-                                                    <p class="highlightpurple ml-auto">8 min</p>
+                                                    <p class="highlightpurple ml-auto" id="time">8 min</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item pb-5">
-                                        <div class="card mb-2">
+                                        <div class="loader2"></div>
+                                        <div class="card mb-2" id="tutorials2">
                                             <div id="img-2" class="d-flex justify-content-center align-item-center">
                                                 <img id="play" class="align-self-center" src="image_assets/play.png"
-                                                    alt="play-btn">
+                                                    id="firstPic" alt="play-btn">
                                             </div>
                                             <div class="card-body">
-                                                <h6 class="card-title text-dark d-flex justify-content-between">Sad
+                                                <h6 class="card-title text-dark d-flex justify-content-between"
+                                                    id="title1">Sad
                                                     Smile</h6>
-                                                <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect
+                                                <p class="card-text text-muted" id="text1">Lorem ipsum dolor sit amet,
+                                                    consect
                                                     adipiscing elit, sed do eiusmod.</p>
                                                 <div class="row">
                                                     <img src="image_assets/profile_1.jpg" class="rounded-circle"
-                                                        alt="profile-pic">
-                                                    <p class="highlightpurple ml-3">Phillip Massey</p>
+                                                        id="pro1" alt="profile-pic">
+                                                    <p class="highlightpurple ml-3" id="proname">Phillip Massey</p>
                                                 </div>
                                                 <div class="row">
-                                                    <p class="highlightpurple ml-auto">8 min</p>
+                                                    <p class="highlightpurple ml-auto" id="time">8 min</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item pb-5">
-                                        <div class="card mb-2">
+                                        <div class="loader2"></div>
+                                        <div class="card mb-2" id="tutorials3">
                                             <div id="img-3" class="d-flex justify-content-center align-item-center">
                                                 <img id="play" class="align-self-center" src="image_assets/play.png"
-                                                    alt="play-btn">
+                                                    id="firstPic" alt="play-btn">
                                             </div>
                                             <div class="card-body">
-                                                <h6 class="card-title text-dark d-flex justify-content-between">Natural
+                                                <h6 class="card-title text-dark d-flex justify-content-between"
+                                                    id="title1">
+                                                    Natural
                                                     Smile</h6>
-                                                <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect
+                                                <p class="card-text text-muted" id="text1">Lorem ipsum dolor sit amet,
+                                                    consect
                                                     adipiscing elit, sed do eiusmod.</p>
                                                 <div class="row">
                                                     <img src="image_assets/profile_1.jpg" class="rounded-circle"
-                                                        alt="profile-pic">
-                                                    <p class="highlightpurple ml-3">Phillip Massey</p>
+                                                        id="pro1" alt="profile-pic">
+                                                    <p class="highlightpurple ml-3" id="proname">Phillip Massey</p>
                                                 </div>
                                                 <div class="row">
-                                                    <p class="highlightpurple ml-auto">8 min</p>
+                                                    <p class="highlightpurple ml-auto" id="time">8 min</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item pb-5">
-                                        <div class="row card mb-2 ml-3 mr-3 justify-content-center">
+                                        <div class="loader2"></div>
+                                        <div class="row card mb-2 ml-3 mr-3 justify-content-center" id="tutorials4">
                                             <div id="img-4" class="d-flex justify-content-center align-item-center">
                                                 <img id="play" class="align-self-center" src="image_assets/play.png"
-                                                    alt="play-btn">
+                                                    id="firstPic" alt="play-btn">
                                             </div>
                                             <div class="card-body">
-                                                <h6 class="card-title text-dark d-flex justify-content-between">Happy
+                                                <h6 class="card-title text-dark d-flex justify-content-between"
+                                                    id="title1">
+                                                    Happy
                                                     Smile</h6>
-                                                <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect
+                                                <p class="card-text text-muted" id="text1">Lorem ipsum dolor sit amet,
+                                                    consect
                                                     adipiscing elit, sed do eiusmod.</p>
                                                 <div class="row">
                                                     <img src="image_assets/profile_1.jpg" class="rounded-circle"
-                                                        alt="profile-pic">
-                                                    <p class="highlightpurple ml-3">Phillip Massey</p>
+                                                        id="pro1" alt="profile-pic">
+                                                    <p class="highlightpurple ml-3" id="proname">Phillip Massey</p>
                                                 </div>
                                                 <div class="row">
-                                                    <p class="highlightpurple ml-auto">8 min</p>
+                                                    <p class="highlightpurple ml-auto" id="time">8 min</p>
                                                 </div>
                                             </div>
                                         </div>
