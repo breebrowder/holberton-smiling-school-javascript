@@ -37,7 +37,7 @@ function latestVideos() {
                 console.log(error);
             },
             complete: function () {
-                $('.loader1').hide();
+                $('.loader2').hide();
             }
         });
 }
