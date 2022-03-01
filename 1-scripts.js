@@ -1,56 +1,39 @@
 $(document).ready(function () {
-    homepageQuotes();
-})
-
-
-function homepageQuotes() {
+  function quotes () {
     $('.loader').show();
     $.ajax({
-        type: 'GET',
-        url: 'https://smileschool-api.hbtn.info/quotes',
-        dataType: 'json',
-        jsonp: false,
-        success: function (data) {
-            $("#quote1").html("");
-            $("#quote1").append(
-                `<div class="row align-items-center justify-content-center" id="quote1">
-                        <div class="row justify-content-around">
-                            <div class="col-sm-2">
-                                <img class="rounded-circle mx-auto mt-3 mb-3 d-block" id="profile"
-                                src="${data[0].pic_url}" width="150" height="150" alt="slide">
-                </div>
-                <div class="col-sm-6 ml-3 mr-3 float-left" id="testimonial1">
-                <p>${data[0].text}</p>
-                <p><span class="text-white font-weight-bold" id="name">${data[0].name}</span><br>
-                <span class="text-white font-italic" id="weatherman">${data[0].title}</span>
-                </p>
-                </div>
-            </div>
-        </div>
-</div>`);
-            $("#quote2").html("");
-            $("#quote2").append(
-                `<div class="row align-items-center justify-content-center" id="quote2">
-                    <div class="row justify-content-around">
-                        <div class="col-sm-2">
-                            <img class="rounded-circle mx-auto mt-3 mb-3 d-block" id="profile1"
-                            src="${data[1].pic_url}" width="150" height="150" alt="slide">
-                        </div>
-                <div class="col-sm-6 ml-3 mr-3 float-left" id="testimonial2">
-                <p>${data[1].text}</p>
-                <p><span class="text-white font-weight-bold" id="name1">${data[1].name}</span><br>
-                <span class="text-white font-italic" id="weatherman1">${data[1].title}</span>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>`);
-        },
-        error: function (error) {
-            console.log(error);
-        },
-        complete: function () {
-            $('.loader').hide();
-        }
+      type: 'GET',
+      url: 'https://smileschool-api.hbtn.info/quotes',
+      error: function (error) {
+        alert(error);
+      },
+      success: function (response) {
+        response.forEach(({ name, pic_url, text, title }) => {
+          displayQuote(name, pic_url, text, title);
+        });
+        $('.carousel .carousel-item:first').addClass('active');
+        $('.loader').hide();
+      }
     });
-}
+  }
+
+  function displayQuote (name, pic_url, text, title) {
+    $('#quote').append(
+          `<div class="carousel-item">
+              <div class="row text-white my-4 ml-2">
+                  <div class="d-flex justify-content-center flex-wrap m-auto">
+                      <div class="mx-0 px-0 mt-2 col col-md-4 d-flex justify-content-center">
+                          <img src="${pic_url}"  class="rounded-circle" width="150" height="150">
+                      </div>
+                      <div class="m-3 col-sm-6 col-md-6">
+                          <p class="font-weight-light pr-4">${text}</p>
+                          <p class="font-weight-bold mt-4">${name}</p>
+                          <p class="font-italic">${title}</p>
+                      </div>
+                  </div>
+              </div>
+          </div>`
+    );
+  }
+  quotes();
+});

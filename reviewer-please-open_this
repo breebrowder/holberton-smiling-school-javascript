@@ -1,7 +1,0 @@
-## Each html file edit for this project has its own .js file as opposed to just one "scripts.js" file. Noted below is every file that links with each other:
-
-* 1-homepage.html --> 1-scripts.js
-* 2-homepage.html --> 1-scripts.js, 2-scripts.js
-* homepage.html --> 1-scripts.js, 2-scripts.js, 3-scripts.js
-* pricing.html --> 4-scripts.js
-* courses.html --> 5-scripts.js

@@ -1,1 +1,1 @@
-This folder contains all images associated with the README.md of the project.
+This directory contains images(.png) and gifs(.gif) that are located in the README of this project repository.
