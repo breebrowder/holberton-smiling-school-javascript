@@ -1,12 +1,16 @@
-# Holberton School Curriculum: 0x01. Implement a design with bootstrap
+# Holberton School Curriculum: 0x00. Build a web app in JavaScript
 
-In this project, you will implement 3 web pages with Bootstrap. You will use all HTML/CSS/Accessibility/Responsive design/Bootstrap knowledges that you learned previously.
+In this project, you will finalize the previous project [0x0B. Implement a design with bootstrap](https://intranet.hbtn.io/projects/1687) and make some parts dynamic with Javascript (JQuery exactly).
+
+You will reuse final files of [0x0B. Implement a design with bootstrap](https://intranet.hbtn.io/projects/1687) and update them.
+
+You will use all HTML/CSS/Accessibility/Responsive design/Bootstrap/Javascript knowledges that you learned previously.
 
 You won’t have a lot of instruction, you are free to implement it the way that you want - the objective is simple: Have fully functional web pages that look the same as the designer file.
 
 **Here the final result on both desktop and mobile versions:**
 
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/intro.jpg)
+![alt text](https://github.com/breezybrow/holberton-smiling-school-javascript/blob/main/readme_assets/MAIN%20FINAL.jpg)
 
 
 ##### This webpage has been designed by Nicolas Philippot, UI/UX designer.
@@ -14,253 +18,178 @@ You won’t have a lot of instruction, you are free to implement it the way that
 ### Requirements
 
 * You have to use Bootstrap
-* Your **styles.css** must be as small as you can - you must use as much as you can Bootstrap classes
+* Your styles.css must be as small as you can - you must use as much as you can Bootstrap classes
+* You have to use JQuery
+* Your scripts.js must contain all your Javascript part
+* Your Javascript must be executed only when the document is loaded
 
 ### Imports
 
 #### For this project, you will need: fonts from Google, JQuery, Bootstrap CSS/JS
 
-Check the [project page](https://intranet.hbtn.io/projects/1687) for imports.
+Check the [project page](https://intranet.hbtn.io/projects/1691) for imports.
 
 # TASKS
-## 0. Read and be familiar with Figma
-Create an account in [Figma](https://www.figma.com/) and open these files:
+## 0. Reuse and polish your Bootstrap integration
+Copy files from [0x0B. Implement a design with bootstrap](https://intranet.hbtn.io/projects/1687):
+
+* homepage.html -> 0-homepage.html
+* pricing.html -> 0-pricing.html
+* courses.html -> 0-courses.html
+* styles.css and any files/folders needed (images, fonts…)
+
+And finalize the design if it’s not done yet - the final result should be the same as these screens:
 
 * [Homepage](https://www.figma.com/file/QYQqMYbdpAHL5xTclwJKSI/Homepage?node-id=0%3A1)
 * [Pricing](https://www.figma.com/file/KLAI53jdYpfFNEy0O79ymB/Pricing)
 * [Courses](https://www.figma.com/file/ivg3abH1HLmMayBgjGg1Qf/Courses)
 
-And “Duplicate to your Drafts” to have access to all design details.
+Important notes with Figma:
 
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/Read_and_be_familiar.png)
+if your computer doesn’t have missing fonts, you can find them here: source-sans-pro and Spin-Cycle-OT
+some values are in float - feel free to round them
+“Be pixel perfect” - yes! but mainly make sure colors, size and position are correct. #C271FF is not purple.
+For this task, please write an amazing README.md
 
-#### Important notes with Figma:
+Interactions note:
 
-* if your computer doesn’t have missing fonts, you can find them here: [source-sans-pro](https://www.fontsquirrel.com/fonts/source-sans-pro) and [Spin-Cycle-OT](https://www.fontsquirrel.com/fonts/Spin-Cycle-OT)
-* some values are in float - feel free to round them
-* “Be pixel perfect” - yes! but mainly make sure colors, size and position are correct. #C271FF is not purple.
-
-For this task, please write an amazing **README.md**
-
-#### Interactions note:
-
-* Web pages must switch to the tablet version when the screen width is 768px
-* Web pages must switch to the mobile version when the screen width is 576px
-* button hover/active: **opacity: 0.9**
+Web pages must switch to the tablet version when the screen width is 768px
+Web pages must switch to the mobile version when the screen width is 576px
+button hover/active: opacity: 0.9
 
 ##### Repo:
 ````
-GitHub repository: holberton-smiling-school
-File: README.md
+GitHub repository: holberton-smiling-school-javascript
+File: 0-homepage.html, 0-pricing.html, 0-courses.html, styles.css, README.md
 ````
 
-## 1. Header first
-Let’s start by the Homepage: **create the header/hero piece**
+## 1. Homepage - quotes
+From 0-homepage.html, create 1-homepage.html.
 
-**Desktop:**
+Replace static quotes by dynamic loading:
 
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/Header_first.png)
+* URL: https://smileschool-api.hbtn.info/quotes
+* No static quotes should be present in the quotes section
+* During the Ajax request, a loader should be present
+* Carousel should work like before
 
-**Mobile:**
+Example of my loader:
+`````
+HTML:
+<div class="loader"></div>
+CSS:
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #C271FF;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+`````
 
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/Header_first_gif.gif)
+Final result:
+![alt text](https://github.com/breezybrow/holberton-smiling-school-javascript/blob/main/readme_assets/Task%201-final%20result.gif)
 
 ##### Repo:
 ````
-GitHub repository: holberton-smiling-school
-File: 0-homepage.html, styles.css
+GitHub repository: holberton-smiling-school-javascript
+File: 1-homepage.html
 ````
 
-## 2. Carousel of quotes
-**Create the section “Carousel of quotes”**
+## 2. Homepage - popular tutorials
+From 1-homepage.html, create 2-homepage.html.
 
-By using a Carousel component of Bootstrap, create this Carousel of quotes.
+Replace static video cards by dynamic loading:
 
-You can have for the moment one quote or twice the same for testing (like example below)
+* URL: https://smileschool-api.hbtn.info/popular-tutorials
+* No static video cards should be present in the section
+* During the Ajax request, a loader should be present
+* Carousel should work by sliding card by card (like GIF below) - this kind of carousel is not unique, make it generic to reuse it easily!
+* Don’t forget the responsive part!
 
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/carousel_of_quotes.gif)
+
+Final result:
+![alt text](https://github.com/breezybrow/holberton-smiling-school-javascript/blob/main/readme_assets/Task%202-%20final%20result.gif)
 
 ##### Repo:
 ````
-GitHub repository: holberton-smiling-school
-File: 1-homepage.html, styles.css
+GitHub repository: holberton-smiling-school-javascript
+File: 2-homepage.html
 ````
 
-## 3. Popular videos
-**Create the section “Most popular tutorials”**
+## 3. Homepage - latest videos
+From 2-homepage.html, create homepage.html.
 
-By using a Carousel component of Bootstrap, create this Carousel of video cards.
+Replace static video card by dynamic loading:
 
-**Reminder:**
+* URL: https://smileschool-api.hbtn.info/latest-videos
+* No static video cards should be present in the section
+* During the Ajax request, a loader should be present
+* Carousel should work by sliding card by card (like GIF below) - this kind of carousel is not unique, make it generic to reuse it easily!
+* Don’t forget the responsive part!
 
-* Desktop: 4 cards
-* Tablet: 2 cards
-* Mobile: 1 card
 
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/popular_videos.png)
+Final result:
+![alt text](https://github.com/breezybrow/holberton-smiling-school-javascript/blob/main/readme_assets/Task%203-final%20result.gif)
 
 ##### Repo:
 ````
-GitHub repository: holberton-smiling-school
-File: 2-homepage.html, styles.css
+GitHub repository: holberton-smiling-school-javascript
+File: homepage.html
 ````
 
-## 4. Row of smiles
-**Create the section “Free membership”**
+## 4. Pricing - quotes
+From 0-pricing.html, create pricing.html.
 
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/row_of_smiles.png)
+Replace static quotes by dynamic loading:
+
+* URL: https://smileschool-api.hbtn.info/quotes
+* No static quotes should be present in the quotes section
+* During the Ajax request, a loader should be present
+* Carousel should work like before
+
+Same as the homepage.html
 
 ##### Repo:
 ````
-GitHub repository: holberton-smiling-school
-File: 3-homepage.html, styles.css
+GitHub repository: holberton-smiling-school-javascript
+File: pricing.html
 ````
 
-## 5. Latest videos
-**Create the section “Latest videos”**
+## 5. Courses
+From 0-courses.html, create courses.html.
 
-Copy the block “Most popular tutorials” to “Latest videos”
+Replace static video card by dynamic loading:
+
+* URL: https://smileschool-api.hbtn.info/courses
+* GET parameters:
+   1. q: search value (in our case, the value of the field KEYWORDS)
+   2. topic: topic filter value (in our case, the value of the field TOPICS)
+   3. sort: order of all courses (in our case, the value of the field SORT BY)
+* No static video cards should be present in the section
+* During the Ajax request, a loader should be present
+* Dropdowns are dynamic (coming from the API):
+   1. Topic: list of topics
+   2. Sort by: list of sorts
+* Search value should be initialized by the value q in the API response
+* The list of video cards is coming from courses in the API response
+* API request must be done when:
+   1. Search value is changing
+   2. A new Topic is selected
+   3. A new Sort by is selected
+
+![alt text](https://github.com/breezybrow/holberton-smiling-school-javascript/blob/main/readme_assets/Task%205-final%20result.gif)
 
 ##### Repo:
 ````
-GitHub repository: holberton-smiling-school
-File: 4-homepage.html, styles.css
-````
-
-## 6. ... and the footer!
-**Create the footer**
-
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/footer.png)
-
-##### Repo:
-````
-GitHub repository: holberton-smiling-school
-File: homepage.html, styles.css
-````
-
-## 7. Pricing - header
-Now, let’s do the pricing page: **create the header/hero piece**
-
-The mobile version must be the same as the Homepage - it’s time to reuse code!
-
-**Desktop:**
-
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/pricing_header.png)
-
-##### Repo:
-````
-GitHub repository: holberton-smiling-school
-File: 0-pricing.html, styles.css
-````
-
-## 8. Prices grid
-**Create the prices grid**
-
-**Desktop:**
-
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/prices_grid.png)
-
-**Mobile:**
-
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/prices_grid_mobile.png)
-
-##### Repo:
-````
-GitHub repository: holberton-smiling-school
-File: 1-pricing.html, styles.css
-````
-
-## 9. Quotes section
-Same as the Homepage, **create the Carousel of quotes**
-
-##### Repo:
-````
-GitHub repository: holberton-smiling-school
-File: 2-pricing.html, styles.css
-````
-
-## 10. FAQ
-**Create the FAQ grid**
-
-**Desktop:**
-
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/pricing_faq.png)
-
-**Mobile:**
-
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/pricing_faq_mobile.png)
-
-##### Repo:
-````
-GitHub repository: holberton-smiling-school
-File: 3-pricing.html, styles.css
-````
-
-## 11. Close the page with a footer
-Same as Homepage, **create the footer**
-
-##### Repo:
-````
-GitHub repository: holberton-smiling-school
-File: pricing.html, styles.css
-````
-
-## 12. Courses - header
-Now, let’s do the courses page: **create the header/hero piece**
-
-The mobile version must be the same as the Homepage - it’s time to reuse code!
-
-**Desktop:**
-
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/courses_header.png)
-
-##### Repo:
-````
-GitHub repository: holberton-smiling-school
-File: 0-courses.html, styles.css
-````
-
-## 13. Search filters
-**Create the search filters section**
-
-Dropdown is a nice way to create filters.
-
-For the selected/placeholder value of both dropdown, no need to have dynamic value - static content is totally ok.
-
-**Desktop:**
-
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/courses_search_filters.gif)
-
-**Tablet/Mobile:**
-
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/courses_search_filters_mobile.gif)
-
-##### Repo:
-````
-GitHub repository: holberton-smiling-school
-File: 1-courses.html, styles.css
-````
-
-## 14. List of result
-**Create the result section of courses**
-
-You can reuse the same cell for testing. Don’t forget to test with odd and even number of cells.
-
-![alt text](https://github.com/breezybrow/holberton-smiling-school/blob/main/readme_assets/list_of_result_mobile.gif)
-
-##### Repo:
-````
-GitHub repository: holberton-smiling-school
-File: 2-courses.html, styles.css
-````
-
-## 15. Close the page with a footer
-Same as Homepage and Pricing page, **create the footer**
-
-##### Repo:
-````
-GitHub repository: holberton-smiling-school
-File: courses.html, styles.css
+GitHub repository: holberton-smiling-school-javascript
+File: courses.html
 ````
 
 ### Contributors
@@ -268,7 +197,7 @@ File: courses.html, styles.css
 1. Bree Browder - 2372@holbertonschool.com
 
 ```
-Project Due Date: September 21, 2021
+Project Due Date: October 12, 2021
 ```
 
 #### Please Note: Some links may be internal and inaccessible to the general public outside of Holberton School students.
