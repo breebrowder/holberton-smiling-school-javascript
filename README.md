@@ -10,10 +10,14 @@ You won’t have a lot of instruction, you are free to implement it the way that
 
 **Here the final result on both desktop and mobile versions:**
 
-![alt text](https://github.com/breezybrow/holberton-smiling-school-javascript/blob/main/readme_assets/MAIN%20FINAL.jpg)
+![alt text](https://github.com/breebrowder/holberton-smiling-school_v2/blob/main/readme_assets/all-three_verisons.jpg)
 
 
 ##### This webpage has been designed by Nicolas Philippot, UI/UX designer.
+
+- [Prototype: Hompeage](https://www.figma.com/file/OBKqrpHdl4oFmYecMQIorA/Homepage-(Copy))
+- [Prototype: Pricing](https://www.figma.com/file/IyFWRKuqs4cg9dQJWNlawq/Pricing-(Copy))
+- [Prototype: Courses](https://www.figma.com/file/Oec2KeHHOTsDeP0qdUAjBf/Courses-(Copy))
 
 ### Requirements
 
@@ -192,12 +196,19 @@ GitHub repository: holberton-smiling-school-javascript
 File: courses.html
 ````
 
-### Contributors
+## About the Developer  💬
 
-1. Bree Browder - 2372@holbertonschool.com
+### Bree Browder
 
-```
-Project Due Date: October 12, 2021
-```
+Bree is known for her creativity, organization, and self awareness. Advances in technology have played an integral part in her life. As an empathy-driven problem solver, Bree wants to be at the forefront of design for products, and to continuously design with others in mind, especially those who tend to be marginalized or forgotten.
+
+### Follow Me
+
+- 📁 [LinkedIn](https://www.linkedin.com/in/breebrowder/)
+- ✍️ [Medium](https://medium.com/@breebrowder)
+- 🖥️ [Portfolio Website](https://breebrowder.github.io)
+
+### Email Me
+📩: browder.bree@gmail.com
 
 #### Please Note: Some links may be internal and inaccessible to the general public outside of Holberton School students.
