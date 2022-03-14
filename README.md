@@ -67,7 +67,7 @@ button hover/active: opacity: 0.9
 
 ##### Repo:
 ````
-GitHub repository: holberton-smiling-school-javascript
+GitHub repository: holberton-smiling-school_v2
 File: 0-homepage.html, 0-pricing.html, 0-courses.html, styles.css, README.md
 ````
 
@@ -102,11 +102,11 @@ CSS:
 `````
 
 Final result:
-![alt text](https://github.com/breezybrow/holberton-smiling-school-javascript/blob/main/readme_assets/Task%201-final%20result.gif)
+![alt text](https://github.com/breebrowder/holberton-smiling-school_v2/blob/main/readme_assets/carosuel.gif)
 
 ##### Repo:
 ````
-GitHub repository: holberton-smiling-school-javascript
+GitHub repository: holberton-smiling-school_v2
 File: 1-homepage.html
 ````
 
@@ -123,11 +123,11 @@ Replace static video cards by dynamic loading:
 
 
 Final result:
-![alt text](https://github.com/breezybrow/holberton-smiling-school-javascript/blob/main/readme_assets/Task%202-%20final%20result.gif)
+![alt text](https://github.com/breebrowder/holberton-smiling-school_v2/blob/main/readme_assets/popular-tutorials.gif)
 
 ##### Repo:
 ````
-GitHub repository: holberton-smiling-school-javascript
+GitHub repository: holberton-smiling-school_v2
 File: 2-homepage.html
 ````
 
@@ -144,11 +144,11 @@ Replace static video card by dynamic loading:
 
 
 Final result:
-![alt text](https://github.com/breezybrow/holberton-smiling-school-javascript/blob/main/readme_assets/Task%203-final%20result.gif)
+![alt text](https://github.com/breebrowder/holberton-smiling-school_v2/blob/main/readme_assets/latest-videos.gif)
 
 ##### Repo:
 ````
-GitHub repository: holberton-smiling-school-javascript
+GitHub repository: holberton-smiling-school_v2
 File: homepage.html
 ````
 
@@ -166,7 +166,7 @@ Same as the homepage.html
 
 ##### Repo:
 ````
-GitHub repository: holberton-smiling-school-javascript
+GitHub repository: holberton-smiling-school_v2
 File: pricing.html
 ````
 
@@ -192,11 +192,11 @@ Replace static video card by dynamic loading:
    2. A new Topic is selected
    3. A new Sort by is selected
 
-![alt text](https://github.com/breezybrow/holberton-smiling-school-javascript/blob/main/readme_assets/Task%205-final%20result.gif)
+![alt text](https://github.com/breebrowder/holberton-smiling-school_v2/blob/main/readme_assets/courses-loader.gif)
 
 ##### Repo:
 ````
-GitHub repository: holberton-smiling-school-javascript
+GitHub repository: holberton-smiling-school_v2
 File: courses.html
 ````
 
