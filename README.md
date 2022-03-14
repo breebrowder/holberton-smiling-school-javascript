@@ -1,5 +1,9 @@
 # Holberton School Curriculum: 0x00. Build a web app in JavaScript
 
+## Project
+
+1. [Build a web app in JavaScript](https://intranet.hbtn.io/projects/1691)
+
 In this project, you will finalize the previous project [0x0B. Implement a design with bootstrap](https://intranet.hbtn.io/projects/1687) and make some parts dynamic with Javascript (JQuery exactly).
 
 You will reuse final files of [0x0B. Implement a design with bootstrap](https://intranet.hbtn.io/projects/1687) and update them.
